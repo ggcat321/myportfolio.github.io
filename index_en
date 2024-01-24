@@ -1,0 +1,302 @@
+<!DOCTYPE HTML>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Data Analysis Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-dfXdzNCGCq4U3u70xwV5fmGt7L4lNGFvZxL7YYooJjQFUC1s6JCAfGd/vE+I6rnp" crossorigin="anonymous">
+		<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></noscript>
+		<style>
+	        	.section {
+	            		padding: 30px; /* 設定上下區塊的 padding */
+	        	}
+	
+	        	.divider {
+	            		border-top: 1px solid transparent; /* 設定透明的橫線 */
+	            		margin-top: 30px; /* 設定上方的 margin 來增加距離 */
+	            		margin-bottom: 30px; /* 設定下方的 margin 來增加距離 */
+	        	}
+	    	</style>
+		<!-- 其他 head 內容 -->
+    		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-dfXdzNCGCq4U3u70xwV5fmGt7L4lNGFvZxL7YYooJjQFUC1s6JCAfGd/vE+I6rnp" crossorigin="anonymous">
+
+	</head>
+	<body class="is-preload">
+		<div class="tab_css">
+		<!-- TAB1 打包區塊 start -->
+		<input id="tab1" type="radio" name="tab" checked="checked"/>
+		<label for="tab1" href="https://www.google.com/">中文</label>
+		<div class="tab_content">
+			第 1 個頁籤內容區塊<br/>
+			123<br/>
+		</div>
+		<!-- TAB1 打包區塊 end -->
+	
+		<!-- TAB2 打包區塊 start -->
+		<input id="tab2" type="radio" name="tab"/>
+		<label for="tab2">英文</label>
+		<div class="tab_content">
+			第 2 個頁籤內容區塊<br/>
+			456<br/>
+		</div>
+		<!-- TAB2 打包區塊 end -->
+	
+	</div>
+	
+	<style>
+		.tab_css{display:flex;flex-wrap:wrap;justify-content:center;}
+		.tab_css input{display:none}
+		.tab_css label{margin: 0 5px 5px 0; padding: 10px 16px; cursor: pointer; border-radius: 5px; background: #999; color: #fff; opacity: 0.5;}
+		.tab_content{order:1;display: none; width:100%; border-bottom: 3px solid #ddd; line-height: 1.6; font-size: .9em; padding: 15px; border: 1px solid #ddd; border-radius: 5px;}
+		.tab_css input:checked + label, .tab_css label:hover{opacity: 1; font-weight:bold;}
+		.tab_css input:checked + label + .tab_content{display: initial;}
+	</style>
+		<!-- Wrapper -->
+		
+			<div id="wrapper" class="divided">
+
+				<!-- One -->
+					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+						<div class="content">
+							<h1>Data Analysis Portfolio</h1>
+							<h1>數據分析專案集</h1>
+							<ul class="actions stacked">
+								<li><a href="https://www.linkedin.com/in/chia-chieh-chuang-a2b21a176/" class="button big wide smooth-scroll-middle">Further Information</a></li>
+								<li><a href="https://www.linkedin.com/in/chia-chieh-chuang-a2b21a176/" class="button big wide smooth-scroll-middle">&nbsp;更&nbsp;多&nbsp;資&nbsp;訊&nbsp;</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/banner.jpg" alt="" />
+						</div>
+					</section>
+
+					<div class="divider"></div> <!-- 透明橫線 -->
+
+				<!-- Two -->
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+						<div class="content">
+							<h2>Causal Inference on the Influence of the Usage of Recreational Marijuana</h2>
+							<h2>因果推論 - 娛樂用大麻對犯罪率的影響</h2>
+							<p>There's a long and fierce debate on pros and cons of the usage of marijuana(espcially the recreational ones).</p>
+							<p>Dataset from <a href="https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/home">The FBI's Crime Data Explorer (CDE)</a> and <a href="https://www.census.gov/topics/families/families-and-households.html">The United States Census Bureau, data clearing by using Python and Excel VBA.</a></p>
+							<p>Stata(for applying method of Synthetic Control) and present by LaTex.</p>
+							<ul class="actions horizontal">
+								<li><a href="#" class="button">Code</a></li>
+								<li><a href="#" class="button">Presentation</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/KN.jpg" alt="" />
+						</div>
+					</section>
+
+				<!-- Three -->
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+						<div class="content">
+							<h2>The Impact of Sustainability Policies on the ESG Performance of Taiwanese Listed Companies</h2>
+							<h2>永續政策對於台灣上市櫃公司ESG表現的影響</h2>
+							<p>Used Synthetic Control Method to infer the causal relationship on how the policies could actually influence the compaines behaviors.</p>
+							<p>Dataset from TEJ, using Python(Pandas - dataset, SciPy - Statistics), and Tableau to display.</p>
+
+							<ul class="actions horizontal">
+								<li><a href="#" class="button">Code</a></li>
+								<li><a href="#" class="button">Presentation</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/KP.jpg" alt="" />
+						</div>
+					</section>
+
+				<!-- Four -->
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+						<div class="content">
+							<h2>Futures Trading Statgies on Taiwan Index</h2>
+							<h2>期貨交易策略 - 台灣指數</h2>
+							<p>Setting arbritrage trading strategy by the difference of the constituents of several indexes.</p>
+							<p>Dataset from Reuter Iekon, Clearing by Excel, and backtesting and evaluating by Python(Pandas)</p>
+							<ul class="actions horizontal">
+								<li><a href="#" class="button">Code</a></li>
+								<li><a href="#" class="button">Presentation</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/DOGE.jpg" alt="" />
+						</div>
+					</section>
+
+				<!-- Five -->
+					<section class="wrapper style1 align-center">
+						<div class="inner">
+							<h2>Other Projects</h2>
+							<p>皮卡丘之類的?</p>
+						</div>
+
+						<!-- Gallery -->
+							<div class="gallery style2 medium lightbox onscroll-fade-in">
+								<article>
+									<a href="images/gallery/fulls/01.jpg" class="image">
+										<img src="images/gallery/thumbs/01.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>專案一(或這一條就不要了)</h3>
+										<p>簡短介紹專案</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/02.jpg" class="image">
+										<img src="images/gallery/thumbs/02.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>專案二(或這一條就不要了)</h3>
+										<p>簡短介紹專案</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/03.jpg" class="image">
+										<img src="images/gallery/thumbs/03.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>專案三(或這一條就不要了)</h3>
+										<p>簡短介紹專案</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/04.jpg" class="image">
+										<img src="images/gallery/thumbs/04.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>專案四(或這一條就不要了)</h3>
+										<p>簡短介紹專案</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/05.jpg" class="image">
+										<img src="images/gallery/thumbs/05.jpg" alt="" />
+									</a>
+								</article>
+							</div>
+					</section>
+
+				<!-- Six -->
+				<!--小項目區域 -->
+
+					<section class="wrapper style1 align-center">
+						<div class="inner">
+							<h2>~這裡要放啥呢~</h2>
+							<p>CV，自我介紹，格言、學歷?</p>
+							<p>但這樣會不會很無聊qq</p>
+							<div class="items style1 medium onscroll-fade-in">
+								<section>
+									<span class="icon style2 major fa-gem"></span>
+									<h3>CV01</h3>
+									<p>小東西(自我吹捧01)</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-save"></span>
+									<h3>CV02</h3>
+									<p>中東西(自我吹捧02)</p>
+									<p>Morbi dui turpis, cursus eget orci amet aliquam congue semper.</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-chart-bar"></span>
+									<h3>CV03</h3>
+									<p>大東西(自我吹捧03)</p>
+									<p>Etiam eget ultrices risus nec tempor elit.</p>
+								</section>					
+							</div>
+						</div>
+					</section>
+
+				<!-- Seven -->
+					<section class="wrapper style1 align-center">
+						<div class="inner medium">
+							<h2>Get In Touch</h2>
+								<form method="post" action="" id="contactForm">
+								    <div class="fields">
+								        <div class="field half">
+								            <label for="name">Name</label>
+								            <input type="text" name="name" id="name" value="" />
+								        </div>
+								        <div class="field half">
+								            <label for="email">Email</label>
+								            <input type="email" name="email" id="email" value="" />
+								        </div>
+								        
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea class="vertical_textarea" name="message" id="message" rows="4" style="resize: none;"></textarea>
+									</div>
+								    </div>
+								    <ul class="actions special">
+								        <li><input type="submit" name="submit" id="submit" value="Send Message" onclick="sendEmail(event)" /></li>
+								    </ul>
+								</form>
+								
+								<script>
+								    function sendEmail(event) {
+								        event.preventDefault(); // 防止表單提交
+								
+								        var name = document.getElementById("name").value;
+								        var email = document.getElementById("email").value;
+								        var message = document.getElementById("message").value;
+								
+								        // 使用電子郵件客戶端的 mailto 協定來發送郵件
+								        var mailtoLink = "mailto:crazystyle63@gmail.com?subject=Message from " + name + "&body=" + encodeURIComponent(message + "\n\nSender's Email: " + email);
+								
+								        // 開啟郵件客戶端
+								        window.location.href = mailtoLink;
+								    }
+								</script>
+
+						</div>
+					</section>
+
+				<!-- Footer -->
+					<footer class="wrapper style1 align-center">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="https://www.linkedin.com/in/chia-chieh-chuang-a2b21a176/" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								<li><a class="icon style2 fa-envelope" onclick="sendEmail(event)"><span class="label">Email</span></a></li>
+								<li><a href="tel:+886-920-122-858" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+								<li><a href="https://github.com/ggcat321/Hello" class="icon style2 brands alt fa-github"><span class="label">GitHub</span></a></li>
+
+
+							</ul>
+							<p>Jeffrey Chuang</p>
+							<p>&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
