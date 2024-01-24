@@ -29,82 +29,6 @@
 				margin-left: 15px; /* 設定左方的 margin 來增加距離 */
 				list-style-type: none;
 	        	}
-			.vertical-menu {
-			  width: 200px; /* Set a width if you like */
-			}
-			
-			.vertical-menu a {
-			  background-color: #eee; /* Grey background color */
-			  color: black; /* Black text color */
-			  display: block; /* Make the links appear below each other */
-			  padding: 12px; /* Add some padding */
-			  text-decoration: none; /* Remove underline from links */
-			}
-			
-			.vertical-menu a:hover {
-			  background-color: #ccc; /* Dark grey background on mouse-over */
-			}
-			
-			.vertical-menu a.active {
-			  background-color: #04AA6D; /* Add a green color to the "active/current" link */
-			  color: white;
-			}
-			/* The side navigation menu */
-			.sidebar {
-			  margin: 0;
-			  padding: 0;
-			  width: 200px;
-			  background-color: #f1f1f1;
-			  position: fixed;
-			  height: 100%;
-			  overflow: auto;
-			}
-			
-			/* Sidebar links */
-			.sidebar a {
-			  display: block;
-			  color: black;
-			  padding: 16px;
-			  text-decoration: none;
-			}
-			
-			/* Active/current link */
-			.sidebar a.active {
-			  background-color: #04AA6D;
-			  color: white;
-			}
-			
-			/* Links on mouse-over */
-			.sidebar a:hover:not(.active) {
-			  background-color: #555;
-			  color: white;
-			}
-			
-			/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
-			div.content {
-			  margin-left: 200px;
-			  padding: 1px 16px;
-			  height: 1000px;
-			}
-			
-			/* On screens that are less than 700px wide, make the sidebar into a topbar */
-			@media screen and (max-width: 700px) {
-			  .sidebar {
-			    width: 100%;
-			    height: auto;
-			    position: relative;
-			  }
-			  .sidebar a {float: left;}
-			  div.content {margin-left: 0;}
-			}
-			
-			/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-			@media screen and (max-width: 400px) {
-			  .sidebar a {
-			    text-align: center;
-			    float: none;
-			  }
-			}
 			
 	    	</style>
 		<!-- 其他 head 內容 -->
@@ -121,14 +45,7 @@
 			</ul>
 		</div>
 		<!-- Wrapper -->
-		<div class="sidebar">
-			<a class="active" href="#home">Home</a>
-			<a href="#news">News</a>
-			<a href="#contact">Contact</a>
-			<a href="#about">About</a>
-		</div>
-			<div id="wrapper" class="divided">
-								
+			<div id="wrapper" class="divided">				
 				<!-- One -->
 					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
