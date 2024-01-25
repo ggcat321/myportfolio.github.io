@@ -63,11 +63,12 @@
 				<!-- Two -->
 					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in onload-content-fade-in" id="first">
 						<div class="content">
-							<h2>因果推論 - 娛樂用大麻對犯罪率的影響</h2>
+							<h2>因果關係推論 - 娛樂大麻對犯罪率的影響</h2>
 							<ul>
-								<li>關於使用大麻（尤其是娛樂性大麻）的利弊存在著長期而激烈的爭論。</li>
-								<li>資料來源：犯罪率部分 - <a href="https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/home">The FBI's Crime Data Explorer (CDE)</a> 以及美國各州家計資料 <a href="https://www.census.gov/topics/families/families-and-households.html">The United States Census Bureau</a>， 資料清理使用：Python & Excel VBA。</li>
-								<li>因果(統計)推論方法：Stata(合成控制法)，並且使用LaTex作最終呈現.</li>
+								<li>關於使用大麻 (娛樂性質) 的利弊一直存在著長期而激烈的爭論，正方支持：大麻合法化，及降低黑市交易風險；反方認為：使用大麻對生理仍有危害。</li>
+								<li>資料來源：犯罪率資料 - <a href="https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/home">The FBI's Crime Data Explorer (CDE)</a> ，以及美國各州家計資料 <a href="https://www.census.gov/topics/families/families-and-households.html">The United States Census Bureau</a>。</li>
+								<li>資料清理：Python(Pandas) & Excel VBA。</li>
+								<li>因果(統計)推論方法：Stata(合成控制法)，並且使用LaTex作最終呈現。</li>
 							</ul>
 							<ul class="actions horizontal">
 								<li><a href="#" class="button fit">程式碼</a></li>
@@ -84,8 +85,10 @@
 						<div class="content">
 							<h2>永續政策對於台灣上市櫃公司ESG表現的影響</h2>
 							<ul>
-								<li>使用差異中的差異(DID)方法來推論永續政策如何實際影響公司行為的因果關係。</li>
-								<li>資料來源：TEJ(台灣經濟新報)，使用 Python(Pandas - 資料清理、分析, SciPy - 統計回歸、Matplotlib - 繪圖)，以及 Tableau 進行最終呈現。</li>
+								<li>使用雙重差分法(DID)以推論「永續政策的制定如何實際影響公司行為」之因果關係。</li>
+								<li>虛無假設：強制性政策，或是自願性參與ESG永續報告書繳交及審查，相較對於提升公司ESG指標及作為有實質幫助。</li>
+								<li>資料來源：TEJ(台灣經濟新報)，台灣公開資訊觀測站。</li>
+								<li>使用 Python(Pandas - 資料清理與分析，SciPy - 統計回歸，Matplotlib - 繪圖)，以及使用 Tableau 進行最終呈現。</li>
 	
 							</ul>
 							
@@ -104,8 +107,9 @@
 						<div class="content">
 							<h2>期貨交易策略 - 台灣指數</h2>
 							<ul>
-								<li>根據多個指數編纂中，成分股權重差異來制定套利交易策略。</li>
-								<li>資料來源：Reuter Eikon，使用 Excel 清理原始資料，請且以 Python(Pandas) 進行策略回測與策略評估</li>
+								<li>根據多個不同的指數編纂方法，針對重要成分股權重不同的差異以制定套利交易策略。</li>
+								<li>資料來源：<a href="https://www.lseg.com/en/data-analytics"></a>Reuter Eikon。</li>
+								<li>使用 Excel 取得並清理原始資料，並且以 Python(Pandas) 進行策略回測與策略評估</li>
 							
 							</ul>
 							<ul class="actions horizontal">
@@ -131,8 +135,8 @@
 										<img src="images/gallery/thumbs/01.jpg" alt="" />
 									</a>
 									<div class="caption">
-										<h3>散戶小台留倉</h3>
-										<p>爬蟲(Request，BeautifulSoup)，整理(Pandas)，繪圖(Matplotlib)</p>
+										<h3>散戶小台期貨留倉</h3>
+										<p>爬蟲(Request、BeautifulSoup)，整理與分析(Pandas)，繪圖(Matplotlib)</p>
 										<ul class="actions fixed">
 											<li><span class="button small">Details</span></li>
 										</ul>
@@ -143,8 +147,8 @@
 										<img src="images/gallery/thumbs/02.jpg" alt="" />
 									</a>
 									<div class="caption">
-										<h3>Monte-Carlo 模擬</h3>
-										<p>資料(Numpy)，統計(Scipy)</p>
+										<h3>Monte-Carlo 統計模擬</h3>
+										<p>亂數資料(Numpy)，統計分析(Scipy、Numpy)</p>
 										<ul class="actions fixed">
 											<li><span class="button small">Details</span></li>
 										</ul>
@@ -156,7 +160,7 @@
 									</a>
 									<div class="caption">
 										<h3>機器學習 - Fashion MNIST</h3>
-										<p>使用Python(sklearn，Tensorflow)達到0.937預測準確力</p>
+										<p>訓練Python CNN模型(Sklearn、Tensorflow)，達到0.937預測準確力(排名第3)</p>
 										<ul class="actions fixed">
 											<li><span class="button small">Details</span></li>
 										</ul>
@@ -168,7 +172,7 @@
 									</a>
 									<div class="caption">
 										<h3>Line機器人架設</h3>
-										<p>使用Python(爬蟲)Flask，建構及時爬蟲回傳機器人</p>
+										<p>使用Python爬蟲(BeautifulSoup)並使用Flask、Line API，建構能及時爬蟲之機器人</p>
 										<ul class="actions fixed">
 											<li><span class="button small">Details</span></li>
 										</ul>
@@ -184,7 +188,6 @@
 						<div class="inner">
 							<h2>~這裡要放啥呢~</h2>
 							<p>CV，自我介紹，格言、學歷?</p>
-							<p>但這樣會不會很無聊qq</p>
 							<div class="items style1 medium onscroll-fade-in">
 								<section>
 									<span class="icon style2 major fa-gem"></span>
